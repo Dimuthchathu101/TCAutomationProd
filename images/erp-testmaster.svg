@@ -1,0 +1,100 @@
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1d4ed8;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="card-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:0.95" />
+      <stop offset="100%" style="stop-color:#f1f5f9;stop-opacity:0.95" />
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#000000" flood-opacity="0.1"/>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="600" fill="url(#bg-gradient)"/>
+  
+  <!-- Decorative elements -->
+  <circle cx="150" cy="150" r="70" fill="rgba(255,255,255,0.1)"/>
+  <circle cx="650" cy="450" r="90" fill="rgba(255,255,255,0.1)"/>
+  
+  <!-- Main content area -->
+  <rect x="50" y="50" width="700" height="500" rx="20" fill="url(#card-gradient)" filter="url(#shadow)"/>
+  
+  <!-- Header -->
+  <rect x="80" y="80" width="640" height="80" rx="12" fill="#3b82f6" opacity="0.1"/>
+  
+  <!-- ERP Modules -->
+  <g transform="translate(100, 200)">
+    <!-- Finance Module -->
+    <rect x="0" y="0" width="120" height="80" rx="8" fill="#10b981" opacity="0.8"/>
+    <text x="60" y="30" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="12" font-weight="bold">FINANCE</text>
+    <text x="60" y="50" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="10">Module</text>
+    
+    <!-- Inventory Module -->
+    <rect x="140" y="0" width="120" height="80" rx="8" fill="#f59e0b" opacity="0.8"/>
+    <text x="200" y="30" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="12" font-weight="bold">INVENTORY</text>
+    <text x="200" y="50" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="10">Module</text>
+    
+    <!-- HR Module -->
+    <rect x="280" y="0" width="120" height="80" rx="8" fill="#8b5cf6" opacity="0.8"/>
+    <text x="340" y="30" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="12" font-weight="bold">HR</text>
+    <text x="340" y="50" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="10">Module</text>
+    
+    <!-- CRM Module -->
+    <rect x="420" y="0" width="120" height="80" rx="8" fill="#ef4444" opacity="0.8"/>
+    <text x="480" y="30" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="12" font-weight="bold">CRM</text>
+    <text x="480" y="50" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="10">Module</text>
+  </g>
+  
+  <!-- Test Automation Flow -->
+  <g transform="translate(100, 320)">
+    <!-- Playwright Icon -->
+    <circle cx="50" cy="50" r="30" fill="#3b82f6" opacity="0.8"/>
+    <text x="50" y="58" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="10" font-weight="bold">PW</text>
+    
+    <!-- Arrow -->
+    <path d="M 90 50 L 130 50" stroke="#3b82f6" stroke-width="3" fill="none"/>
+    <polygon points="125,45 135,50 125,55" fill="#3b82f6"/>
+    
+    <!-- GitHub Actions -->
+    <rect x="150" y="30" width="100" height="40" rx="6" fill="#24292e" opacity="0.8"/>
+    <text x="200" y="50" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="10" font-weight="bold">GitHub</text>
+    <text x="200" y="62" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="8">Actions</text>
+    
+    <!-- Arrow -->
+    <path d="M 270 50 L 310 50" stroke="#3b82f6" stroke-width="3" fill="none"/>
+    <polygon points="305,45 315,50 305,55" fill="#3b82f6"/>
+    
+    <!-- Allure Reporting -->
+    <rect x="330" y="30" width="100" height="40" rx="6" fill="#ff6b6b" opacity="0.8"/>
+    <text x="380" y="50" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="10" font-weight="bold">Allure</text>
+    <text x="380" y="62" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="8">Reports</text>
+  </g>
+  
+  <!-- Test Results -->
+  <g transform="translate(100, 420)">
+    <rect x="0" y="0" width="500" height="60" rx="8" fill="#f8fafc" stroke="#e2e8f0" stroke-width="2"/>
+    
+    <!-- Success Bar -->
+    <rect x="10" y="10" width="350" height="40" rx="6" fill="#10b981" opacity="0.8"/>
+    <text x="185" y="35" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="12" font-weight="bold">95% Success Rate</text>
+    
+    <!-- Failed Bar -->
+    <rect x="370" y="10" width="30" height="40" rx="6" fill="#ef4444" opacity="0.8"/>
+    <text x="385" y="35" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="10" font-weight="bold">5%</text>
+  </g>
+  
+  <!-- Title -->
+  <text x="400" y="120" text-anchor="middle" fill="#1f2937" font-family="Arial, sans-serif" font-size="24" font-weight="bold">ERP TestMaster</text>
+  <text x="400" y="150" text-anchor="middle" fill="#6b7280" font-family="Arial, sans-serif" font-size="14">Automation Framework</text>
+  
+  <!-- Decorative icons -->
+  <g transform="translate(600, 200)">
+    <circle cx="0" cy="0" r="20" fill="#3b82f6" opacity="0.3"/>
+    <circle cx="0" cy="0" r="12" fill="#3b82f6" opacity="0.6"/>
+    <circle cx="0" cy="0" r="6" fill="#3b82f6" opacity="0.9"/>
+  </g>
+</svg>
