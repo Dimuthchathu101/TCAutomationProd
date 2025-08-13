@@ -1,0 +1,119 @@
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2496ed;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0db7ed;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="card-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:0.95" />
+      <stop offset="100%" style="stop-color:#f8fafc;stop-opacity:0.95" />
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#000000" flood-opacity="0.1"/>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="600" fill="url(#bg-gradient)"/>
+  
+  <!-- Decorative elements -->
+  <circle cx="100" cy="100" r="50" fill="rgba(36,150,237,0.2)"/>
+  <circle cx="700" cy="500" r="60" fill="rgba(36,150,237,0.2)"/>
+  
+  <!-- Main content area -->
+  <rect x="50" y="50" width="700" height="500" rx="20" fill="url(#card-gradient)" filter="url(#shadow)"/>
+  
+  <!-- Header -->
+  <rect x="80" y="80" width="640" height="80" rx="12" fill="#2496ed" opacity="0.1"/>
+  
+  <!-- Docker Containers -->
+  <g transform="translate(100, 200)">
+    <!-- Container 1 -->
+    <rect x="0" y="0" width="120" height="80" rx="8" fill="#2496ed" opacity="0.8"/>
+    <text x="60" y="30" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="10" font-weight="bold">APP</text>
+    <text x="60" y="45" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="8">Container</text>
+    <rect x="10" y="50" width="20" height="20" rx="2" fill="white" opacity="0.3"/>
+    <rect x="35" y="50" width="20" height="20" rx="2" fill="white" opacity="0.3"/>
+    <rect x="60" y="50" width="20" height="20" rx="2" fill="white" opacity="0.3"/>
+    <rect x="85" y="50" width="20" height="20" rx="2" fill="white" opacity="0.3"/>
+    
+    <!-- Container 2 -->
+    <rect x="140" y="0" width="120" height="80" rx="8" fill="#8b5cf6" opacity="0.8"/>
+    <text x="200" y="30" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="10" font-weight="bold">DB</text>
+    <text x="200" y="45" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="8">Container</text>
+    <rect x="150" y="50" width="20" height="20" rx="2" fill="white" opacity="0.3"/>
+    <rect x="175" y="50" width="20" height="20" rx="2" fill="white" opacity="0.3"/>
+    <rect x="200" y="50" width="20" height="20" rx="2" fill="white" opacity="0.3"/>
+    <rect x="225" y="50" width="20" height="20" rx="2" fill="white" opacity="0.3"/>
+    
+    <!-- Container 3 -->
+    <rect x="280" y="0" width="120" height="80" rx="8" fill="#10b981" opacity="0.8"/>
+    <text x="340" y="30" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="10" font-weight="bold">CACHE</text>
+    <text x="340" y="45" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="8">Container</text>
+    <rect x="290" y="50" width="20" height="20" rx="2" fill="white" opacity="0.3"/>
+    <rect x="315" y="50" width="20" height="20" rx="2" fill="white" opacity="0.3"/>
+    <rect x="340" y="50" width="20" height="20" rx="2" fill="white" opacity="0.3"/>
+    <rect x="365" y="50" width="20" height="20" rx="2" fill="white" opacity="0.3"/>
+    
+    <!-- Container 4 -->
+    <rect x="420" y="0" width="120" height="80" rx="8" fill="#f59e0b" opacity="0.8"/>
+    <text x="480" y="30" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="10" font-weight="bold">NGINX</text>
+    <text x="480" y="45" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="8">Container</text>
+    <rect x="430" y="50" width="20" height="20" rx="2" fill="white" opacity="0.3"/>
+    <rect x="455" y="50" width="20" height="20" rx="2" fill="white" opacity="0.3"/>
+    <rect x="480" y="50" width="20" height="20" rx="2" fill="white" opacity="0.3"/>
+    <rect x="505" y="50" width="20" height="20" rx="2" fill="white" opacity="0.3"/>
+  </g>
+  
+  <!-- Docker Compose -->
+  <g transform="translate(100, 320)">
+    <rect x="0" y="0" width="600" height="120" rx="8" fill="#1e293b" opacity="0.9"/>
+    
+    <!-- Docker Compose code -->
+    <text x="20" y="25" fill="#2496ed" font-family="monospace" font-size="12">version: '3.8'</text>
+    <text x="20" y="45" fill="#8b5cf6" font-family="monospace" font-size="12">services:</text>
+    <text x="20" y="65" fill="#10b981" font-family="monospace" font-size="12">  app:</text>
+    <text x="20" y="85" fill="#d19a66" font-family="monospace" font-size="12">    build: .</text>
+    <text x="20" y="105" fill="#d19a66" font-family="monospace" font-size="12">    ports: - "3000:3000"</text>
+    <text x="20" y="125" fill="#c678dd" font-family="monospace" font-size="12">// Multi-stage builds & Security best practices</text>
+  </g>
+  
+  <!-- Best Practices -->
+  <g transform="translate(100, 460)">
+    <rect x="0" y="0" width="600" height="60" rx="8" fill="#f8fafc" stroke="#e2e8f0" stroke-width="2"/>
+    
+    <!-- Best Practices -->
+    <rect x="10" y="10" width="110" height="40" rx="6" fill="#2496ed" opacity="0.8"/>
+    <text x="65" y="35" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="9" font-weight="bold">Multi-Stage</text>
+    
+    <rect x="130" y="10" width="110" height="40" rx="6" fill="#8b5cf6" opacity="0.8"/>
+    <text x="185" y="35" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="9" font-weight="bold">Security</text>
+    
+    <rect x="250" y="10" width="110" height="40" rx="6" fill="#10b981" opacity="0.8"/>
+    <text x="305" y="35" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="9" font-weight="bold">Optimization</text>
+    
+    <rect x="370" y="10" width="110" height="40" rx="6" fill="#f59e0b" opacity="0.8"/>
+    <text x="425" y="35" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="9" font-weight="bold">Networking</text>
+    
+    <rect x="490" y="10" width="100" height="40" rx="6" fill="#ef4444" opacity="0.8"/>
+    <text x="540" y="35" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="9" font-weight="bold">Volumes</text>
+  </g>
+  
+  <!-- Title -->
+  <text x="400" y="120" text-anchor="middle" fill="#1f2937" font-family="Arial, sans-serif" font-size="24" font-weight="bold">Docker Best Practices</text>
+  <text x="400" y="150" text-anchor="middle" fill="#6b7280" font-family="Arial, sans-serif" font-size="14">Containerization & Multi-Stage Builds</text>
+  
+  <!-- Decorative elements -->
+  <g transform="translate(650, 200)">
+    <circle cx="0" cy="0" r="20" fill="#2496ed" opacity="0.3"/>
+    <circle cx="0" cy="0" r="12" fill="#2496ed" opacity="0.6"/>
+    <circle cx="0" cy="0" r="6" fill="#2496ed" opacity="0.9"/>
+  </g>
+  
+  <g transform="translate(150, 540)">
+    <rect x="0" y="0" width="4" height="25" fill="#2496ed" opacity="0.5"/>
+    <rect x="8" y="0" width="4" height="35" fill="#2496ed" opacity="0.7"/>
+    <rect x="16" y="0" width="4" height="20" fill="#2496ed" opacity="0.3"/>
+    <rect x="24" y="0" width="4" height="30" fill="#2496ed" opacity="0.6"/>
+  </g>
+</svg>
