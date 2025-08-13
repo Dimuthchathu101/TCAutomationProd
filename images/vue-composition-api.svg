@@ -1,0 +1,114 @@
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#42b883;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#35495e;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="card-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:0.95" />
+      <stop offset="100%" style="stop-color:#f8fafc;stop-opacity:0.95" />
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#000000" flood-opacity="0.1"/>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="600" fill="url(#bg-gradient)"/>
+  
+  <!-- Decorative elements -->
+  <circle cx="100" cy="100" r="50" fill="rgba(66,184,131,0.2)"/>
+  <circle cx="700" cy="500" r="60" fill="rgba(66,184,131,0.2)"/>
+  
+  <!-- Main content area -->
+  <rect x="50" y="50" width="700" height="500" rx="20" fill="url(#card-gradient)" filter="url(#shadow)"/>
+  
+  <!-- Header -->
+  <rect x="80" y="80" width="640" height="80" rx="12" fill="#42b883" opacity="0.1"/>
+  
+  <!-- Vue.js Logo -->
+  <g transform="translate(100, 200)">
+    <path d="M 40 20 L 60 60 L 80 20 L 100 60 L 120 20" stroke="#42b883" stroke-width="4" fill="none" opacity="0.8"/>
+    <text x="80" y="90" text-anchor="middle" fill="#42b883" font-family="Arial, sans-serif" font-size="12" font-weight="bold">Vue.js 3</text>
+  </g>
+  
+  <!-- Composition API Features -->
+  <g transform="translate(250, 180)">
+    <!-- Reactive -->
+    <rect x="0" y="0" width="120" height="60" rx="8" fill="#42b883" opacity="0.8"/>
+    <text x="60" y="25" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="10" font-weight="bold">REACTIVE</text>
+    <text x="60" y="40" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="8">ref() & reactive()</text>
+    <rect x="20" y="45" width="20" height="10" fill="white" opacity="0.3"/>
+    <rect x="50" y="45" width="20" height="10" fill="white" opacity="0.3"/>
+    <rect x="80" y="45" width="20" height="10" fill="white" opacity="0.3"/>
+    
+    <!-- Computed -->
+    <rect x="140" y="0" width="120" height="60" rx="8" fill="#8b5cf6" opacity="0.8"/>
+    <text x="200" y="25" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="10" font-weight="bold">COMPUTED</text>
+    <text x="200" y="40" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="8">computed()</text>
+    <path d="M 160 45 L 200 35 L 240 45" stroke="white" stroke-width="2" fill="none" opacity="0.7"/>
+    
+    <!-- Watch -->
+    <rect x="280" y="0" width="120" height="60" rx="8" fill="#10b981" opacity="0.8"/>
+    <text x="340" y="25" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="10" font-weight="bold">WATCH</text>
+    <text x="340" y="40" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="8">watch() & watchEffect()</text>
+    <circle cx="320" cy="45" r="3" fill="white" opacity="0.7"/>
+    <circle cx="340" cy="45" r="3" fill="white" opacity="0.7"/>
+    <circle cx="360" cy="45" r="3" fill="white" opacity="0.7"/>
+  </g>
+  
+  <!-- Composition API Code -->
+  <g transform="translate(100, 280)">
+    <rect x="0" y="0" width="600" height="120" rx="8" fill="#1e293b" opacity="0.9"/>
+    
+    <!-- Composition API code -->
+    <text x="20" y="25" fill="#42b883" font-family="monospace" font-size="12">import { ref, computed, watch } from 'vue'</text>
+    <text x="20" y="45" fill="#8b5cf6" font-family="monospace" font-size="12">export default {</text>
+    <text x="20" y="65" fill="#10b981" font-family="monospace" font-size="12">  setup() {</text>
+    <text x="20" y="85" fill="#d19a66" font-family="monospace" font-size="12">    const count = ref(0)</text>
+    <text x="20" y="105" fill="#d19a66" font-family="monospace" font-size="12">    const double = computed(() => count.value * 2)</text>
+    <text x="20" y="125" fill="#c678dd" font-family="monospace" font-size="12">// Composition API Patterns & Best Practices</text>
+  </g>
+  
+  <!-- Vue 3 Features -->
+  <g transform="translate(100, 420)">
+    <rect x="0" y="0" width="670" height="60" rx="8" fill="#f8fafc" stroke="#e2e8f0" stroke-width="2"/>
+    
+    <!-- Vue 3 Features -->
+    <rect x="10" y="10" width="100" height="40" rx="6" fill="#42b883" opacity="0.8"/>
+    <text x="60" y="35" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="9" font-weight="bold">Teleport</text>
+    
+    <rect x="120" y="10" width="100" height="40" rx="6" fill="#8b5cf6" opacity="0.8"/>
+    <text x="170" y="35" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="9" font-weight="bold">Suspense</text>
+    
+    <rect x="230" y="10" width="100" height="40" rx="6" fill="#10b981" opacity="0.8"/>
+    <text x="280" y="35" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="9" font-weight="bold">Fragments</text>
+    
+    <rect x="340" y="10" width="100" height="40" rx="6" fill="#f59e0b" opacity="0.8"/>
+    <text x="390" y="35" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="9" font-weight="bold">Multiple v-model</text>
+    
+    <rect x="450" y="10" width="100" height="40" rx="6" fill="#ef4444" opacity="0.8"/>
+    <text x="500" y="35" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="9" font-weight="bold">Tree Shaking</text>
+    
+    <rect x="560" y="10" width="100" height="40" rx="6" fill="#3b82f6" opacity="0.8"/>
+    <text x="610" y="35" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="9" font-weight="bold">TypeScript</text>
+  </g>
+  
+  <!-- Title -->
+  <text x="400" y="120" text-anchor="middle" fill="#1f2937" font-family="Arial, sans-serif" font-size="24" font-weight="bold">Vue.js 3 Composition API</text>
+  <text x="400" y="150" text-anchor="middle" fill="#6b7280" font-family="Arial, sans-serif" font-size="14">Modern Vue.js Development Patterns</text>
+  
+  <!-- Decorative elements -->
+  <g transform="translate(650, 200)">
+    <circle cx="0" cy="0" r="20" fill="#42b883" opacity="0.3"/>
+    <circle cx="0" cy="0" r="12" fill="#42b883" opacity="0.6"/>
+    <circle cx="0" cy="0" r="6" fill="#42b883" opacity="0.9"/>
+  </g>
+  
+  <g transform="translate(150, 500)">
+    <rect x="0" y="0" width="4" height="25" fill="#42b883" opacity="0.5"/>
+    <rect x="8" y="0" width="4" height="35" fill="#42b883" opacity="0.7"/>
+    <rect x="16" y="0" width="4" height="20" fill="#42b883" opacity="0.3"/>
+    <rect x="24" y="0" width="4" height="30" fill="#42b883" opacity="0.6"/>
+  </g>
+</svg>
