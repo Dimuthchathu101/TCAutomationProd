@@ -1,0 +1,103 @@
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3178c6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1e40af;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="card-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:0.95" />
+      <stop offset="100%" style="stop-color:#f8fafc;stop-opacity:0.95" />
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#000000" flood-opacity="0.1"/>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="600" fill="url(#bg-gradient)"/>
+  
+  <!-- Decorative elements -->
+  <circle cx="120" cy="120" r="60" fill="rgba(49,120,198,0.2)"/>
+  <circle cx="680" cy="480" r="70" fill="rgba(49,120,198,0.2)"/>
+  
+  <!-- Main content area -->
+  <rect x="50" y="50" width="700" height="500" rx="20" fill="url(#card-gradient)" filter="url(#shadow)"/>
+  
+  <!-- Header -->
+  <rect x="80" y="80" width="640" height="80" rx="12" fill="#3178c6" opacity="0.1"/>
+  
+  <!-- TypeScript Logo -->
+  <g transform="translate(100, 200)">
+    <rect x="0" y="0" width="80" height="80" rx="8" fill="#3178c6" opacity="0.8"/>
+    <text x="40" y="35" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="16" font-weight="bold">TS</text>
+    <text x="40" y="55" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="10">TypeScript</text>
+  </g>
+  
+  <!-- Advanced Type Features -->
+  <g transform="translate(220, 180)">
+    <!-- Conditional Types -->
+    <rect x="0" y="0" width="140" height="60" rx="8" fill="#3178c6" opacity="0.8"/>
+    <text x="70" y="25" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="10" font-weight="bold">CONDITIONAL</text>
+    <text x="70" y="40" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="10" font-weight="bold">TYPES</text>
+    <path d="M 20 45 L 70 35 L 120 45" stroke="white" stroke-width="2" fill="none" opacity="0.7"/>
+    
+    <!-- Utility Types -->
+    <rect x="160" y="0" width="140" height="60" rx="8" fill="#8b5cf6" opacity="0.8"/>
+    <text x="230" y="25" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="10" font-weight="bold">UTILITY</text>
+    <text x="230" y="40" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="10" font-weight="bold">TYPES</text>
+    <rect x="180" y="45" width="20" height="10" fill="white" opacity="0.3"/>
+    <rect x="210" y="45" width="20" height="10" fill="white" opacity="0.3"/>
+    <rect x="240" y="45" width="20" height="10" fill="white" opacity="0.3"/>
+    
+    <!-- Mapped Types -->
+    <rect x="320" y="0" width="140" height="60" rx="8" fill="#10b981" opacity="0.8"/>
+    <text x="390" y="25" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="10" font-weight="bold">MAPPED</text>
+    <text x="390" y="40" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="10" font-weight="bold">TYPES</text>
+    <circle cx="360" cy="45" r="3" fill="white" opacity="0.7"/>
+    <circle cx="390" cy="45" r="3" fill="white" opacity="0.7"/>
+    <circle cx="420" cy="45" r="3" fill="white" opacity="0.7"/>
+  </g>
+  
+  <!-- Type System Diagram -->
+  <g transform="translate(100, 280)">
+    <rect x="0" y="0" width="600" height="120" rx="8" fill="#1e293b" opacity="0.9"/>
+    
+    <!-- Type hierarchy -->
+    <text x="20" y="25" fill="#3178c6" font-family="monospace" font-size="12">type AdvancedType<T> = T extends string ? 'string' : 'other';</text>
+    <text x="20" y="45" fill="#8b5cf6" font-family="monospace" font-size="12">type UtilityType = Pick<User, 'id' | 'name'>;</text>
+    <text x="20" y="65" fill="#10b981" font-family="monospace" font-size="12">type MappedType = { [K in keyof T]: T[K] };</text>
+    <text x="20" y="85" fill="#f59e0b" font-family="monospace" font-size="12">type ConditionalType = T extends U ? X : Y;</text>
+    <text x="20" y="105" fill="#ef4444" font-family="monospace" font-size="12">// Advanced Type System Features</text>
+  </g>
+  
+  <!-- Type Safety Indicators -->
+  <g transform="translate(100, 420)">
+    <rect x="0" y="0" width="600" height="60" rx="8" fill="#f8fafc" stroke="#e2e8f0" stroke-width="2"/>
+    
+    <!-- Type Safety Bar -->
+    <rect x="10" y="10" width="400" height="40" rx="6" fill="#10b981" opacity="0.8"/>
+    <text x="210" y="35" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="12" font-weight="bold">100% Type Safety</text>
+    
+    <!-- Compile Time -->
+    <rect x="420" y="10" width="170" height="40" rx="6" fill="#3178c6" opacity="0.8"/>
+    <text x="505" y="35" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="10" font-weight="bold">Compile Time</text>
+  </g>
+  
+  <!-- Title -->
+  <text x="400" y="120" text-anchor="middle" fill="#1f2937" font-family="Arial, sans-serif" font-size="24" font-weight="bold">TypeScript Advanced Features</text>
+  <text x="400" y="150" text-anchor="middle" fill="#6b7280" font-family="Arial, sans-serif" font-size="14">Advanced Type System & Utility Types</text>
+  
+  <!-- Decorative elements -->
+  <g transform="translate(650, 200)">
+    <circle cx="0" cy="0" r="20" fill="#3178c6" opacity="0.3"/>
+    <circle cx="0" cy="0" r="12" fill="#3178c6" opacity="0.6"/>
+    <circle cx="0" cy="0" r="6" fill="#3178c6" opacity="0.9"/>
+  </g>
+  
+  <g transform="translate(150, 500)">
+    <rect x="0" y="0" width="4" height="30" fill="#3178c6" opacity="0.5"/>
+    <rect x="8" y="0" width="4" height="40" fill="#3178c6" opacity="0.7"/>
+    <rect x="16" y="0" width="4" height="25" fill="#3178c6" opacity="0.3"/>
+    <rect x="24" y="0" width="4" height="35" fill="#3178c6" opacity="0.6"/>
+  </g>
+</svg>
